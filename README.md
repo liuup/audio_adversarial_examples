@@ -38,6 +38,11 @@ https://docs.docker.com/install/
 ```
 docker build -t aae_deepspeech_093_gpu .
 ```
+Because of the miss of original nvidia image, I re-write the Dockerfile with `090925_Dockerfile`. I recommand use this command to build the image.
+```
+docker build -t aae_deepspeech_093_gpu -f 0909_Dockerfile .
+```
+
 ### With Nvidia-GPU support:
 3. Install the NVIDIA Container Toolkit.
 This step will only work on Linux and is only necessary if you want GPU support.
